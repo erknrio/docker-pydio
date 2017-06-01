@@ -1,0 +1,10 @@
+version: '2'
+services:
+  pydio8:
+    build:
+      context: ./pydio8
+    volumes:
+      - "~/.pydio8/html:/var/www/html"
+    ports:
+      - "8085:80"
+    restart: always
